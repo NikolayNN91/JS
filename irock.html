@@ -7,14 +7,20 @@
         if (userName) {
           alert("Рад вас видеть, " + userName + ".");
           document.getElementById("rockImg").src = "images/rock_happy.png";
+	  setTimeout("document.getElementById('rockImg').src = 'images/rock.png';", 5000);
         }
+      }
+
+      function resizeRock() {
+        clientWindowHeight = document.body.clientHeight;
+        rockImageHeight = (clientWindowHeight - 100) * 0.9;
+        document.getElementById("rockImg").style.height = rockImageHeight;
       }
     </script>
   </head>
-  <body onload="alert('Hello, I am your pet rock.');">
+  <body onload="alert('Hello, I am your pet rock.'); resizeRock();">
     <div style="margin-top:1OOpx; text-align:center">
-      <img id="rockImg" src="images/rock.png" alt="iRock" style="cursor:pointer" 
-        onclick="touchRock();" />
+      <img id="rockImg" src="images/rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock();" />
     </div>
   </body>
 </html>
