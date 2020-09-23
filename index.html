@@ -6,17 +6,31 @@
   <title>Racoon lives matter!</title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js_script/js_script.js"></script>
 
 </head>
-<body>
+<body onload="showDate();">
   <div>
-    <ul class="bar">
-      <li><a class="bar-el" href="home.jsp">Home</a></li>
-      <li><a class="bar-el" href="home.jsp">Empty</a></li>
-      <li><a class="bar-el" href="home.jsp">Empty</a></li>
-      <li><a class="bar-el" href="home.jsp">Log in</a></li>
-      <li><a class="bar-el" href="home.jsp">Log out</a></li>
+    <ul class="bar-list">
+      <li class="bar-left"><a class="bar" href="index.html">Home</a></li>
+      <li class="bar-left"><a class="bar" href="index.html">Empty</a></li>
+      <li class="bar-left"><a class="bar" href="index.html">Empty</a></li>
+      <li class="bar-right"><a class="bar" href="index.html">Log in</a></li>
+      <li class="bar-right"><a class="bar" href="index.html">Log out</a></li>
     </ul>
   </div>
+  <div class="time">
+    <img class="cloud" src="images/cloud.jpeg" alt="cloud">
+    <div id="current-time" class="current-time"></div>
+  </div>
+
+  <div>
+    <img class="toilet" src="images/toilet.jpeg" alt="toilet">
+  </div>
+
+  <footer>© 2020 Copyright
+		<address>Racoon.com</address>
+	</footer>
+  
 </body>
 </html>
